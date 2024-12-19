@@ -1,0 +1,40 @@
+# Python Bytecode Files
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# .env File (Sensitive Information)
+.env
+
+# IDE & Editor Directories/Files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Pytest Cache
+.pytest_cache/
+
+# Python Distribution & Packaging
+*.egg
+*.egg-info/
+dist/
+build/
+*.tar.gz
+*.whl
+
+# MacOS Finder
+.DS_Store
+
+# Windows Thumbs.db and Desktop.ini
+Thumbs.db
+Desktop.ini
