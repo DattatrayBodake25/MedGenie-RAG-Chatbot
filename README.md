@@ -99,7 +99,7 @@ This will start the server at http://127.0.0.1:8000. The --reload option allows 
 ## API Endpoints
 ### The backend exposes two main endpoints:
 
-1. /retrieve
+# 1. /retrieve
 ### Method: POST
 
 Description: This endpoint retrieves relevant documents based on the query.
@@ -126,7 +126,7 @@ Description: This endpoint retrieves relevant documents based on the query.
 }
 ```
 
-2. /answer
+# 2. /answer
 ### Method: POST
 
 Description: This endpoint generates an answer based on the retrieved documents.
