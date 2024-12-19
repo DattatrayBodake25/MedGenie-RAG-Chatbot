@@ -54,7 +54,7 @@ cd medgenie-rag-chatbot
 ```
 
 ## Install Dependencies
-### Install the required Python packages using pip. It's recommended to create a virtual environment before proceeding.
+Install the required Python packages using pip. It's recommended to create a virtual environment before proceeding.
 - Create a virtual environment (optional but recommended):
 
 ```bash
@@ -78,13 +78,13 @@ pip install -r requirements.txt
 ```
 
 ## Set Up Environment Variables
-### Create a .env file in the root of the project and add your Pinecone and Google Gemini API keys. Example:
+Create a .env file in the root of the project and add your Pinecone and Google Gemini API keys. Example:
 ```bash
 PINECONE_API_KEY=your_pinecone_api_key
 GEMINI_API_KEY=your_google_gemini_api_key
 ```
 
-### Make sure to replace the placeholders with your actual API keys.
+Make sure to replace the placeholders with your actual API keys.
 
 ## Run the Application
 - Start the FastAPI application by running:
@@ -92,7 +92,7 @@ GEMINI_API_KEY=your_google_gemini_api_key
 uvicorn backend.main:app --reload
 ```
 
-### This will start the server at http://127.0.0.1:8000. The --reload option allows you to make changes and automatically reload the server.
+This will start the server at http://127.0.0.1:8000. The --reload option allows you to make changes and automatically reload the server.
 
 - Open frontend/index.html in your browser to interact with the chatbot.
 
@@ -102,7 +102,7 @@ uvicorn backend.main:app --reload
 - 1. /retrieve
 ### Method: POST
 
-### Description: This endpoint retrieves relevant documents based on the query.
+Description: This endpoint retrieves relevant documents based on the query.
 
 ### Request Body:
 
@@ -129,9 +129,9 @@ uvicorn backend.main:app --reload
 - 2. /answer
 ### Method: POST
 
-### Description: This endpoint generates an answer based on the retrieved documents.
+Description: This endpoint generates an answer based on the retrieved documents.
 
-### Request Body:
+Request Body:
 
 ```json
 {
@@ -140,7 +140,7 @@ uvicorn backend.main:app --reload
 }
 ```
 
-### Response:
+Response:
 
 ```json
 {
@@ -149,13 +149,13 @@ uvicorn backend.main:app --reload
 ```
 
 ## Testing
-### To test the chatbot, simply run the FastAPI server and access the frontend. You can interact with the chatbot and ask medical-related questions. For non-medical greetings like "Hi", "Hello", etc., the chatbot will respond accordingly without attempting to perform a document search.
+To test the chatbot, simply run the FastAPI server and access the frontend. You can interact with the chatbot and ask medical-related questions. For non-medical greetings like "Hi", "Hello", etc., the chatbot will respond accordingly without attempting to perform a document search.
 
 ## Contributing
-### Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request. Ensure that your code is well-tested and documented.
+Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request. Ensure that your code is well-tested and documented.
 
 ## License
-### This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 markdown
 Copy code
